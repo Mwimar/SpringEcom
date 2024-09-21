@@ -1,8 +1,9 @@
 package com.mwimar.SpringEcom.controllers;
 
-@RestController
+@RestController("api")
 public class ProductController {
-    public String getAllProducs(){
+    @RequestMapping("/products")
+    public String getAllProducts(){
         return "AllProducts";
     }
 }
